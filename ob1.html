@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Car</title>
+</head>
+<body>
+    <script>
+        function Car(name, yearModel, engineType, manufacturer, brand, countryOrigin) {
+             this.name = name;
+            this.yearModel = yearModel;
+            this.engineType = engineType;
+            this.manufacturer = manufacturer;
+            this.brand = brand;
+            this.countryOrigin = countryOrigin;
+        }
+      
+        let myCar = new Car("Corolla", "2022", "Gasoline", "Toyota", "Toyota Corolla", "Japan");
+    
+       
+        document.write(`Car name: ${myCar.name}<br>`);
+        document.write(`Year model: ${myCar.yearModel}<br>`);
+        document.write(`Engine type: ${myCar.engineType}<br>`);
+        document.write(`Manufacturer: ${myCar.manufacturer}<br>`);
+        document.write(`Brand: ${myCar.brand}<br>`);
+        document.write(`Country of origin: ${myCar.countryOrigin}<br>`);
+    </script>  
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object of Student</title>
+</head>
+<body>
+    <script>
+        function Student(firstName, lastName, address, age, email) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.address = address;
+            this.age = age;
+            this.email = email;
+        }
+
+        Student.prototype.nationality = "USA";
+        Student.prototype.language = "English";
+
+        let myStudent = new Student("Mary", "Smith", "BURKHARDT RD. EVANSVILLE.", "29", "mary123@yahoo.com");
+        console.log(myStudent.nationality); // Output: USA
+        console.log(myStudent.language); // Output: English
+
+        document.write(`First name: ${myStudent.firstName}<br>`);
+        document.write(`Last name: ${myStudent.lastName}<br>`);
+        document.write(`Address: ${myStudent.address}<br>`);
+        document.write(`Age: ${myStudent.age}<br>`);
+        document.write(`Email: ${myStudent.email}<br>`);
+        document.write(`Nationality: ${myStudent.nationality}<br>`);
+        document.write(`Language: ${myStudent.language}<br>`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Object</title>
+</head>
+<body>
+    <script>
+        function Arithmetic(input1, input2) {
+            this.input1 = input1;
+            this.input2 = input2;
+            this.addition = function() {
+            return this.input1 + this.input2;
+        };
+            this.subtraction = function() {
+            return this.input1 - this.input2;
+        };
+            this.multiplication = function() {
+            return this.input1 * this.input2;
+        };
+            this.division = function() {
+            return this.input1 / this.input2;
+        };
+        }
+
+        let myArithmetic = new Arithmetic(5, 3);
+        console.log(myArithmetic.addition()); // Output: 8
+        console.log(myArithmetic.subtraction()); // Output: 2
+        console.log(myArithmetic.multiplication()); // Output: 15
+        console.log(myArithmetic.division()); // Output: 1.6666666666666667
+    
+        document.write(`Addition: ${myArithmetic.addition()}<br>`);
+        document.write(`Subtraction: ${myArithmetic.subtraction()}<br>`);
+        document.write(`Multiplication: ${myArithmetic.multiplication()}<br>`);
+        document.write(`Division: ${myArithmetic.division()}<br>`);
+
+    </script>
+</body>
+</html>
